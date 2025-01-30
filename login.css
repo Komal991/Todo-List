@@ -1,0 +1,153 @@
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #d0e7ff, #f1faff);
+
+}
+
+.login-box {
+    height: 65vh;
+    width: 30vw;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    box-shadow: 3px 3px 10px rgba(0.1, 0, 0, 0.9);
+    padding: 20px;
+}
+
+.page-captn {
+    color: rgb(61, 119, 207);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 8px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    
+}
+
+input {
+    border: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    color: white;
+}
+
+.loginDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name, #password {
+    margin-top: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+#name:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+#password:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.page-heading {
+    color: rgb(19, 70, 146);
+    font-weight: 400;
+    text-align: center;
+    font-size: 19px;
+}
+
+.btnn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonLogin {
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: rgb(61, 119, 207);
+    box-shadow: 3px 3px 5px rgba(0.1, 0, 0, 0.9);
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+    margin: 3px;
+}
+
+.buttonLogin:hover {
+    background-color: rgb(38, 91, 190);
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .login-box {
+        height: auto;
+        width: 80vw;
+        padding: 20px;
+    }
+
+    .page-captn {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    input {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .buttonLogin {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .login-box {
+        height: auto;
+        width: 60vw;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .buttonLogin {
+        width: 90px;
+        height: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .login-box {
+        height: auto;
+        width: 40vw;
+    }
+
+    input {
+        width: 90%;
+    }
+}
+
+/* Extra-large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .login-box {
+        height: 60vh;
+        width: 50vw;
+    }
+}
